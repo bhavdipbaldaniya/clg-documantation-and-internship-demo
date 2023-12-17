@@ -1,0 +1,6 @@
+[{"EmployeeName":"Alex","CompanyName":"Binary Republik","Email":"alex@binaryrepublik.com","ProfilePicture":"\\pictures\\E001.jpg","Role":"Software Developer","PhoneNumber":"6354041276","id":"E001"},
+{"EmployeeName":"Sam","CompanyName":"Binary Republik","Email":"sam@binaryrepublik.com","ProfilePicture":"\\pictures\\E002.jpg","Role":"Intern","PhoneNumber":"6354041276","id":"E002"},
+{"EmployeeName":"Kerry","CompanyName":"Binary Republik","Email":"kerry@binaryrepublik.com","ProfilePicture":"\\pictures\\E003.jpg","Role":".QA","PhoneNumber":"6354041276","id":"E003"},
+{"EmployeeName":"Messy","CompanyName":"Binary Republik","Email":"messy@binaryrepublik.com","ProfilePicture":"\\pictures\\E004.jpg","Role":"HR","PhoneNumber":"6354041276","id":"E004"},
+{"EmployeeName":"Raman","CompanyName":"Binary Republik","Email":"raman@binaryrepublik.com","ProfilePicture":"\\pictures\\E005.jpg","Role":"Project Manager","PhoneNumber":"6354041276","id":"E005"}
+]

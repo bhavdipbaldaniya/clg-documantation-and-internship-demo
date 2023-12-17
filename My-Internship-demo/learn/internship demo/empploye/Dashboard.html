@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <link rel="stylesheet" href="../empploye/Style.css">
+    <script src="../empploye/Script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <table id="myTable">
+            <thead id="tableHead">
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </table>
+
+    <style>
+        table {
+             width: 100%;
+            margin: 0px 50px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        let EMP = [{ "EmployeeName": "Alex", "CompanyName": "Binary Republik", "Email": "alex@binaryrepublik.com", "ProfilePicture": "\\pictures\\E001.jpg", "Role": "Software Developer", "PhoneNumber": "6354041276", "id": "E001" },
+        { "EmployeeName": "Sam", "CompanyName": "Binary Republik", "Email": "sam@binaryrepublik.com", "ProfilePicture": "\\pictures\\E002.jpg", "Role": "Intern", "PhoneNumber": "6354041276", "id": "E002" },
+        { "EmployeeName": "Kerry", "CompanyName": "Binary Republik", "Email": "kerry@binaryrepublik.com", "ProfilePicture": "\\pictures\\E003.jpg", "Role": ".QA", "PhoneNumber": "6354041276", "id": "E003" },
+        { "EmployeeName": "Messy", "CompanyName": "Binary Republik", "Email": "messy@binaryrepublik.com", "ProfilePicture": "\\pictures\\E004.jpg", "Role": "HR", "PhoneNumber": "6354041276", "id": "E004" },
+        { "EmployeeName": "Raman", "CompanyName": "Binary Republik", "Email": "raman@binaryrepublik.com", "ProfilePicture": "\\pictures\\E005.jpg", "Role": "Project Manager", "PhoneNumber": "6354041276", "id": "E005" }
+        ]
+        function sortTable(params) {
+            let sortOrder = true
+            let order = sortOrder ? 'desc' : 'asc'
+            console.log({ order });
+
+            const sorted = EMP.sort((a, b) => {
+                return (
+                    a[params].toString().localeCompare(b[params].toString(), "en", {
+                        numeric: true
+                    }) * (order === "asc" ? 1 : -1)
+                );
+            });
+            tableData(sorted)
+            sortOrder = !sortOrder
+        }
+
+        function tableHead(params) {
+            let TR = document.createElement('tr')
+            EMP.map((obj, i) =>
+                i === 0 && Object.entries({ ...obj })?.map((key, value) => {
+                    let TH = document.createElement('th')
+                    TH.align = 'left'
+                    TH.innerHTML = key[0]
+                    TR.appendChild(TH)
+                    TH.onclick = () => sortTable(key[0])
+                }))
+            document.getElementById('tableHead')?.appendChild(TR)
+        }
+        tableHead()
+        function tableData(params) {
+            
+            let DDD = params.map((ele) => {
+                return `<tr><td>${ele.EmployeeName}</td><td>${ele.CompanyName}</td><td>${ele.Email}</td><td>${ele.ProfilePicture}</td><td>${ele.Role}</td><td>${ele.PhoneNumber}</td><td>${ele.id}</td></tr>`
+            }).join('')
+            document.getElementById('tableBody').innerHTML = DDD
+        }
+        window.onload = tableData(EMP)
+    </script>
+
+
+
+</body>
+
+</html>

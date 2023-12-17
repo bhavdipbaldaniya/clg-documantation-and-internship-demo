@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    text-align: center;
+    box-sizing: content-box;
+    border-radius: 10px;
+
+  }
+  body{
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
+    width: 100vw;
+    overflow-x: hidden;
+    display: block;
+    background: linear-gradient( #9db54c, #d16868, #3f91c4, #f2910a);
+
+  }
+  .bh {
+
+margin-top: 250px;
+margin-left: 33%;
+padding: 10pt;
+  }
+ 
+ 
+  
+  

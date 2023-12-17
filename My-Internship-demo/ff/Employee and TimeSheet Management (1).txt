@@ -1,0 +1,43 @@
+Task Techs: Bootstrap, JQuery, Css, Html, JSON
+
+Practical Definition : Employee and TimeSheet Management
+
+Features/Tasks:
+1. Dashboard.
+	-> Create an Dashboard which shows an employee Details Page.
+	-> Each and every employee information should have an option/button for view 			timesheet and view employee details page.
+	-> Dashboard employee details table should have a proper pagination with an column 		based sorting and searching on table.
+	-> Searching should be done on emloyee name and employee email column.
+	-> Table should contain option for filter based on employee role.
+
+2. Employee Details Page.
+	-> Employee Details page should show an option for update/delete employee. 
+	-> When click on update. it should show a pop-up form for updating current employee 	details.
+	-> When click on Delete Employee it should show a confirmation dialog.
+	-> Page should have a proper designing as shown in the attached images
+
+3. Update/Register Employee.
+	-> On Dashboard when click on Create Employee Button. It should show an pop-up form 	for creating an employee.
+	-> On Employee Details page when click on update employee it should show an update 	form with current employee information.
+	-> Form should contain proper validation for each and every controls.
+	-> Profile picture should only allowed jpg or png.
+	-> Once the form submit it should store in a particular page.
+
+4. View TimeSheet
+	-> For Each and every employee there should be an update for view timesheet on 	dashboard.	
+	-> There should be one table as shown in the image which contains an work hour 	details for particular employee.
+	-> This Page should contain options for update and delete timesheet.
+	-> Time sheet details should come from the timesheet.json file. 
+	-> When click on edit button all the controls become editable for the particular 	raw and user can update the timesheet.
+	-> When click on Add Timesheet option there should be one pop-up form or add new 	row with options to select all required information for particular date and 	workhour and other details.
+	-> For Update and Add new timesheet there should be a proper validations.
+
+
+
+
+Note : Each and every user should contain a timesheet for the monday-friday only. We should not allow the date saturday and sunday to add timesheet.
+
+-> Each and every operations are going to perform on a particular json file. For Employee Details there is one json and for timesheet there is another separate json file.
+
+-> Profile pictures should store on a local folder and copied from the particular location and it will store with a userid.<extension> .
+	
